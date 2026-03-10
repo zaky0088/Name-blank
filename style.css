@@ -45,12 +45,14 @@ padding:25px;
 
 /* CARD DASHBOARD */
 
-.cards{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-margin-bottom:30px;
+.card{
+background:#0d1b35;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.4);
+text-align:center;
 }
+
 
 .card{
 background:#0d1b35;
@@ -65,8 +67,9 @@ color:#9db3ff;
 }
 
 .card p{
-font-size:28px;
+font-size:32px;
 margin-top:10px;
+font-weight:bold;
 }
 
 /* TABLE */
