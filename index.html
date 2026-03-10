@@ -3,6 +3,8 @@
 <head>
 <title>FTTH NOC Monitoring</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 
 body{
@@ -13,28 +15,34 @@ color:white;
 }
 
 /* HEADER */
+
 header{
 background:#07142c;
 padding:15px;
 font-size:20px;
 font-weight:bold;
+letter-spacing:1px;
 }
 
 /* LAYOUT */
+
 .container{
 display:flex;
 min-height:100vh;
 }
 
 /* SIDEBAR */
+
 .sidebar{
 width:220px;
 background:#07142c;
 padding:20px;
+border-right:1px solid #0f2a55;
 }
 
 .sidebar h3{
 margin-bottom:20px;
+color:#9db3ff;
 }
 
 .sidebar a{
@@ -43,22 +51,26 @@ color:#ccc;
 text-decoration:none;
 margin:12px 0;
 font-size:15px;
+transition:0.3s;
 }
 
 .sidebar a:hover{
 color:#00eaff;
+padding-left:5px;
 }
 
 /* MAIN */
+
 .main{
 flex:1;
 padding:25px;
 }
 
 /* CARDS */
+
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:20px;
 margin-bottom:30px;
 }
@@ -68,6 +80,11 @@ background:#0d1b35;
 padding:20px;
 border-radius:10px;
 box-shadow:0 0 10px rgba(0,0,0,0.4);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-3px);
 }
 
 .card h3{
@@ -77,11 +94,13 @@ color:#9db3ff;
 }
 
 .card p{
-font-size:28px;
+font-size:30px;
 margin:10px 0 0;
+font-weight:bold;
 }
 
 /* TABLE */
+
 table{
 width:100%;
 border-collapse:collapse;
@@ -104,6 +123,7 @@ background:#091630;
 }
 
 /* STATUS */
+
 .active{
 color:#00ff88;
 font-weight:bold;
@@ -112,6 +132,35 @@ font-weight:bold;
 .putus{
 color:#ff4b4b;
 font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:40px;
+text-align:center;
+color:#888;
+font-size:13px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.container{
+flex-direction:column;
+}
+
+.sidebar{
+width:100%;
+display:flex;
+overflow:auto;
+}
+
+.sidebar a{
+margin-right:15px;
+}
+
 }
 
 </style>
@@ -177,7 +226,7 @@ font-weight:bold;
 <td>ODP-001</td>
 <td>12</td>
 <td>Achmad</td>
-<td class="active">Active</td>
+<td class="active">● Active</td>
 </tr>
 
 <tr>
@@ -186,10 +235,14 @@ font-weight:bold;
 <td>ODP-002</td>
 <td>8</td>
 <td>Budi</td>
-<td class="putus">Putus</td>
+<td class="putus">● Putus</td>
 </tr>
 
 </table>
+
+<footer>
+FTTH Monitoring System © 2026
+</footer>
 
 </div>
 </div>
