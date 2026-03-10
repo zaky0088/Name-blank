@@ -15,59 +15,43 @@
 <header>
 
 <div class="logo">
-📡 FTTH NOC Monitoring
-</div>
-
-<div id="clock"></div>
-
-</header>
+  <header>FTTH NOC Monitoring</header>
 
 <div class="container">
 
-<!-- Sidebar -->
-
 <div class="sidebar">
+<h3>Menu</h3>
 
-<a href="index.html">Dashboard</a>
-<a href="pages/data-jalur.html">Data Jalur</a>
-<a href="pages/input-data.html">Input Jalur</a>
-<a href="pages/monitoring.html">Monitoring</a>
-<a href="pages/teknisi.html">Teknisi</a>
-
-<button onclick="logout()">Logout</button>
+<a href="#">Dashboard</a>
+<a href="#">Data Jalur</a>
+<a href="#">Input Jalur</a>
+<a href="#">Monitoring</a>
+<a href="#">Teknisi</a>
 
 </div>
-
-<!-- Main -->
 
 <div class="main">
-
-<h2>Status Network</h2>
-
-<div id="networkStatus" class="network-normal">
-🟢 Network Normal
-</div>
 
 <div class="cards">
 
 <div class="card">
 <h3>Total Jalur</h3>
-<p id="totalJalur">0</p>
+<p>32</p>
 </div>
 
 <div class="card">
 <h3>Total Core</h3>
-<p id="totalCore">0</p>
+<p>256</p>
 </div>
 
 <div class="card">
 <h3>Active</h3>
-<p id="active">0</p>
+<p style="color:lime">28</p>
 </div>
 
 <div class="card">
 <h3>Jalur Putus</h3>
-<p id="putus">0</p>
+<p style="color:red">4</p>
 </div>
 
 </div>
@@ -87,17 +71,29 @@
 </tr>
 </thead>
 
-<tbody id="dataFiber"></tbody>
+<tbody>
+
+<tr>
+<td>1</td>
+<td>FO-01</td>
+<td>ODP-001</td>
+<td>12</td>
+<td>Achmad</td>
+<td class="status-active">Active</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>FO-02</td>
+<td>ODP-002</td>
+<td>8</td>
+<td>Budi</td>
+<td class="status-putus">Putus</td>
+</tr>
+
+</tbody>
 
 </table>
 
 </div>
-
 </div>
-
-<script src="js/script.js"></script>
-<script src="js/dashboard.js"></script>
-
-</body>
-
-</html>
