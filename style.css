@@ -36,6 +36,11 @@ margin:12px 0;
 color:#00eaff;
 }
 
+.sidebar a.active-menu{
+color:#00eaff;
+font-weight:bold;
+}
+
 /* MAIN */
 
 .main{
