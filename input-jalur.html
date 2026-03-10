@@ -1,2 +1,135 @@
-<h1>Input Jalur Fiber</h1>
-<a href="index.html">← Dashboard</a>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Input Jalur Fiber</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#020b1c;
+color:white;
+}
+
+header{
+background:#07142c;
+padding:15px;
+font-size:20px;
+font-weight:bold;
+}
+
+.container{
+display:flex;
+min-height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:220px;
+background:#07142c;
+padding:20px;
+}
+
+.sidebar a{
+display:block;
+color:#ccc;
+text-decoration:none;
+margin:12px 0;
+}
+
+.sidebar a:hover{
+color:#00eaff;
+}
+
+/* MAIN */
+
+.main{
+flex:1;
+padding:25px;
+}
+
+/* FORM */
+
+.form-box{
+background:#0d1b35;
+padding:20px;
+border-radius:10px;
+max-width:500px;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin-top:8px;
+margin-bottom:15px;
+border:none;
+border-radius:5px;
+}
+
+button{
+background:#00eaff;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#00c5d6;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>FTTH NOC Monitoring</header>
+
+<div class="container">
+
+<div class="sidebar">
+<h3>Menu</h3>
+
+<a href="index.html">Dashboard</a>
+<a href="data-jalur.html">Data Jalur</a>
+<a href="input-jalur.html">Input Jalur</a>
+<a href="monitoring.html">Monitoring</a>
+<a href="teknisi.html">Teknisi</a>
+
+</div>
+
+<div class="main">
+
+<h2>Input Jalur Fiber</h2>
+
+<div class="form-box">
+
+<label>Nama Jalur</label>
+<input type="text" placeholder="FO-01">
+
+<label>ODP</label>
+<input type="text" placeholder="ODP-001">
+
+<label>Jumlah Core</label>
+<input type="number" placeholder="12">
+
+<label>Teknisi</label>
+<input type="text" placeholder="Nama Teknisi">
+
+<label>Status</label>
+<select>
+<option>Active</option>
+<option>Putus</option>
+</select>
+
+<button>Simpan Data</button>
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
