@@ -1,0 +1,89 @@
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#0f172a;
+color:white;
+}
+
+header{
+background:#020617;
+padding:15px;
+font-size:20px;
+font-weight:bold;
+}
+
+.container{
+display:grid;
+grid-template-columns:220px 1fr;
+min-height:100vh;
+}
+
+.sidebar{
+background:#020617;
+padding:20px;
+}
+
+.sidebar a{
+display:block;
+color:#94a3b8;
+text-decoration:none;
+margin:12px 0;
+font-size:14px;
+}
+
+.sidebar a:hover{
+color:white;
+}
+
+.main{
+padding:20px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+margin-bottom:20px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+.card h3{
+margin:0;
+font-size:14px;
+color:#94a3b8;
+}
+
+.card p{
+font-size:24px;
+margin:5px 0;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:#1e293b;
+border-radius:10px;
+overflow:hidden;
+}
+
+th,td{
+padding:10px;
+border-bottom:1px solid #334155;
+}
+
+.status-active{
+color:lime;
+}
+
+.status-putus{
+color:red;
+}
+
+.status-maintenance{
+color:orange;
+}
