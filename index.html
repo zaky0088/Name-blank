@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FTTH NOC Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+📡 FTTH NOC Monitoring
+</div>
+
+<div id="clock"></div>
+
+</header>
+
+<div class="container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<a href="index.html">Dashboard</a>
+<a href="pages/data-jalur.html">Data Jalur</a>
+<a href="pages/input-data.html">Input Jalur</a>
+<a href="pages/monitoring.html">Monitoring</a>
+<a href="pages/teknisi.html">Teknisi</a>
+
+<button onclick="logout()">Logout</button>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<h2>Status Network</h2>
+
+<div id="networkStatus" class="network-normal">
+🟢 Network Normal
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Total Jalur</h3>
+<p id="totalJalur">0</p>
+</div>
+
+<div class="card">
+<h3>Total Core</h3>
+<p id="totalCore">0</p>
+</div>
+
+<div class="card">
+<h3>Active</h3>
+<p id="active">0</p>
+</div>
+
+<div class="card">
+<h3>Jalur Putus</h3>
+<p id="putus">0</p>
+</div>
+
+</div>
+
+<h2>Monitoring Jalur Fiber</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>No</th>
+<th>Jalur</th>
+<th>ODP</th>
+<th>Core</th>
+<th>Teknisi</th>
+<th>Status</th>
+</tr>
+</thead>
+
+<tbody id="dataFiber"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
