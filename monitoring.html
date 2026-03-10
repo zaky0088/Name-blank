@@ -1,2 +1,146 @@
-<h1>Monitoring Jaringan</h1>
-<a href="index.html">← Dashboard</a>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Monitoring Fiber</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#020b1c;
+color:white;
+}
+
+header{
+background:#07142c;
+padding:15px;
+font-size:20px;
+font-weight:bold;
+}
+
+.container{
+display:flex;
+min-height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:220px;
+background:#07142c;
+padding:20px;
+}
+
+.sidebar a{
+display:block;
+color:#ccc;
+text-decoration:none;
+margin:12px 0;
+}
+
+.sidebar a:hover{
+color:#00eaff;
+}
+
+/* MAIN */
+
+.main{
+flex:1;
+padding:25px;
+}
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+background:#0d1b35;
+border-radius:10px;
+overflow:hidden;
+}
+
+th,td{
+padding:12px;
+text-align:center;
+}
+
+th{
+background:#13264d;
+}
+
+tr:nth-child(even){
+background:#091630;
+}
+
+.active{
+color:#00ff88;
+font-weight:bold;
+}
+
+.putus{
+color:#ff4b4b;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>FTTH NOC Monitoring</header>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h3>Menu</h3>
+
+<a href="index.html">Dashboard</a>
+<a href="data-jalur.html">Data Jalur</a>
+<a href="input-jalur.html">Input Jalur</a>
+<a href="monitoring.html">Monitoring</a>
+<a href="teknisi.html">Teknisi</a>
+
+</div>
+
+<div class="main">
+
+<h2>Monitoring Jalur Fiber</h2>
+
+<table>
+
+<tr>
+<th>No</th>
+<th>Jalur</th>
+<th>ODP</th>
+<th>Core</th>
+<th>Teknisi</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>FO-01</td>
+<td>ODP-001</td>
+<td>12</td>
+<td>Achmad</td>
+<td class="active">● Active</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>FO-02</td>
+<td>ODP-002</td>
+<td>8</td>
+<td>Budi</td>
+<td class="putus">● Putus</td>
+</tr>
+
+</table>
+
+</div>
+</div>
+
+</body>
+</html>
